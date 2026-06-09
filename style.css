@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #2b2b2b;
+  background: #f7f7f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+  background: #f7f7f5;
+  line-height: 1.6;
+}
+
+.page-shell {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.page-intro {
+  margin: 0;
+  color: #606060;
+  font-size: 1rem;
+}
+
+.article-card {
+  display: block;
+  padding: 26px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(44, 49, 64, 0.08);
+  margin-top: 24px;
+}
+
+#featured-article {
+  background: linear-gradient(180deg, #ffffff 0%, #eef1f5 100%);
+  border: 1px solid rgba(27, 31, 40, 0.08);
+}
+
+#featured-article h2,
+.article-card h3 {
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+
+.article-card p {
+  margin: 0 0 18px;
+  color: #4f4f4f;
+  font-size: 1rem;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  color: #7d7d7d;
+  font-size: 0.94rem;
+}
+
+.metadata li::after {
+  content: '•';
+  margin: 0 0 0 12px;
+  color: #c4c4c4;
+}
+
+.metadata li:last-child::after {
+  content: '';
+}
+
+.read-more {
+  color: #1b4d8f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-list {
+  margin-top: 0;
+}
+
+.more-articles {
+  margin: 32px 0 0;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e6e6e6;
+}
+
+.more-articles h2 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+}
+
+.more-articles ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.more-articles a {
+  color: #1b4d8f;
+  text-decoration: none;
+}
+
+.more-articles a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  .article-card,
+  .more-articles {
+    padding: 20px;
+  }
+}
